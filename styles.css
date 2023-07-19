@@ -1,0 +1,297 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  p, a, button {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Arvo', sans-serif;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    transition: 0.4s;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  #col1 {
+    color: #9615DB
+  }
+  #col2 {
+    color: #be3144;
+  }
+  #col3 {
+    color: #45567d;
+  }
+  #col4 {
+    color: #be3144;
+  }
+  
+  #one:hover {
+    color: #9615DB;
+  }
+  #two:hover {
+    color: #be3144;
+  }
+  #three:hover {
+    color: #45567d;
+  }
+  
+  #navbar {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  
+  }
+
+  #navbar h1 {
+    margin-left: 10px;
+  }
+  
+  #navbar ul {
+    width: 50%;
+  }
+  
+  
+  
+  #navbar ul {
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  
+  /* welcome section */
+  
+  #welcome-section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-color: #D2D3D3;
+  }
+  
+  #welcome-section h1 {
+    font-size: 50px;
+    color: #9615DB;
+    margin-bottom: 15px;
+  
+  }
+  
+  #welcome-section p {
+    font-size: 30px;
+    color: #2D3032;
+  }
+  
+  .cont1 {
+    margin-top: 300px;
+  }
+  
+  /* about section */
+  
+  #about {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    color: #be3144;
+  }
+  
+  #about img {
+    border-radius: 15px;
+    border: 2px solid #6C757C;
+    width: 180px;
+    height: auto;
+    transition: 1s;
+  }
+  
+  
+  
+  #about p {
+    font-size: 20px;
+  }
+  
+  
+  .cont2 {
+    width: 60%;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* projects section */
+  
+  #projects {
+    padding: 30px;
+    background-color: #D2D3D3;
+    text-align: center;
+  
+  }
+  
+  #projects h2 {
+    color: #45567d;
+  }
+  
+  .cont3 {
+    width: 70%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .item {
+    width: 170px;
+    height: 220px;
+    border: 1.5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: white;
+  
+  }
+  
+  .item button {
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #45567d;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 2px solid #45567d;
+  }
+  
+  .item button:hover {
+    background-color: #45567d;
+    color: white;
+  }
+  
+  #contact {
+    padding: 30px;
+    text-align: center;
+    color: #303841;
+  }
+  
+  #contact h2 {
+    color: #FCD20C;
+  }
+  
+  .cont4 {
+    width: 70%;
+    margin: 80px auto;
+  }
+  
+  .cont4 ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    
+  }
+  
+  .cont4 ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  
+  footer {
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid;
+    font-weight: bold;
+  }
+  
+  
+  @media(max-width: 800px) {
+    .cont2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 750px) {
+  
+    #navbar ul {
+      width: 75%;
+    }
+     
+  
+  }
+  
+  @media (max-width: 630px) {
+    .cont3 {
+      grid-template-columns: 170px 170px;
+    }
+    #welcome-section h1 {
+      font-size: 35px;
+    }
+    #welcome-section p {
+      font-size: 20px;
+    }
+  
+    .cont4 ul {
+      display: grid;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #navbar ul {
+      display: grid;
+      justify-content: center;
+      margin-left: 20px;
+    }
+    #navbar ul li {
+      margin: 5px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+    }
+    #navbar {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+    }
+  }
